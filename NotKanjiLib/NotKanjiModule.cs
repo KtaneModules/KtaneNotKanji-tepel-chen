@@ -9,16 +9,16 @@ using Newtonsoft.Json.Linq;
 public class NotKanjiModule : ModuleScript
 {
     [SerializeField]
-    GameObject Underline;
+    internal GameObject Underline;
     [SerializeField]
-    KMSelectable[] Keys;
+    internal KMSelectable[] Keys;
     [SerializeField]
-    TextMesh[] KeysText;
+    internal TextMesh[] KeysText;
     [SerializeField]
-    TextMesh ScreenText;
+    internal TextMesh ScreenText;
 
-    Encoder encoder;
-    List<int> input;
+    internal Encoder encoder;
+    internal List<int> input;
 
     bool isStrikeAnimation = false;
 
@@ -105,7 +105,7 @@ public class NotKanjiModule : ModuleScript
         KeysText[3].color = Color.white;
         yield return new WaitForSeconds(0.2f);
         ScreenText.color = Color.black;
-        Strike($"Received {string.Join("", input.Select(i => i.ToString()).ToArray())}, expected {string.Join("", encoder.Answers.Select(i => i.ToString()).ToArray())}");
+        Strike($"Received {string.Join("", input.Select(i => (i + 1).ToString()).ToArray())}, expected {string.Join("", encoder.Answers.Select(i => i.ToString()).ToArray())}");
         isStrikeAnimation = false;
         ResetModule();
         yield return null;

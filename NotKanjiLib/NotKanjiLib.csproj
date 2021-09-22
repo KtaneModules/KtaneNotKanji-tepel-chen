@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TPNotKanjiModule.cs" />
     <Compile Include="Encoder.cs" />
     <Compile Include="NotKanjiModule.cs" />
     <Compile Include="Step2Data.cs" />

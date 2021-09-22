@@ -93,13 +93,13 @@ namespace NotKanji
             var c2Idx = keyB.MatrixIdx(isKeyBAppended, c2);
             var c3Idx = keyB.MatrixIdx(isKeyBAppended, c3);
 
-            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c1, c1Idx[0], c3, c3Idx[1], c2, c2Idx[2]);
+            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c1, c1Idx[0] + 1, c3, c3Idx[1] + 1, c2, c2Idx[2] + 1);
             var e1 = keyA.Matrix(isKeyAAppended, c1Idx[0], c3Idx[1], c2Idx[2]);
             logger.Log("Letter {0} was encoded to {1}", isFirst ? 1 : 4, e1);
-            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c2, c2Idx[0], c1, c1Idx[1], c3, c1Idx[2]);
+            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c2, c2Idx[0] + 1, c1, c1Idx[1] + 1, c3, c1Idx[2] + 1);
             var e2 = keyA.Matrix(isKeyAAppended, c2Idx[0], c1Idx[1], c3Idx[2]);
             logger.Log("Letter {0} was encoded to {1}", isFirst ? 2 : 5, e2);
-            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c3, c3Idx[0], c2, c2Idx[1], c1, c3Idx[2]);
+            logger.Log("{0} was found in row {1}, {2} was found in column {3}, {4} was found in layer {5}", c3, c3Idx[0] + 1, c2, c2Idx[1] + 1, c1, c3Idx[2] + 1);
             var e3 = keyA.Matrix(isKeyAAppended, c3Idx[0], c2Idx[1], c1Idx[2]);
             logger.Log("Letter {0} was encoded to {1}", isFirst ? 3 : 6, e3);
             return new List<char>() { e1, e2, e3 };
