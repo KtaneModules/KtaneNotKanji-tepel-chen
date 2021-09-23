@@ -40,7 +40,7 @@ namespace NotKanji
 
         private List<char> getAlphabet(bool isAppended)
         {
-            if (_lst != null || isAppended == _isAppended) return _lst;
+            if (_lst != null && isAppended == _isAppended) return _lst;
             _lst = new List<char>();
             _isAppended = isAppended;
             foreach (char c in this.Meaning.ToCharArray().ToList())

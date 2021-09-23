@@ -14,24 +14,11 @@ MonoBehaviour:
   id: NotKanjiModule
   title: Not Kanji
   author: tepel
-  description: 'I learned how to defuse the original Kanji module in school, but did
-    I learn this one?
-
-
-    Based off of Kanji Module by Strike_Kaboom and LeGeND.
-
-    https://steamcommunity.com/sharedfiles/filedetails/?id=1890676453
-
-
-    Special thanks to ktane1 for proofreading and improving the manual.
-
-
-    Manuals
-
-    HTML: https://ktane.timwi.de/HTML/Not Kanji.html
-
-    PDF: https://ktane.timwi.de/PDF/Not Kanji.html'
-  version: 1.0.0
+  description: "I learned how to defuse the original Kanji module in school, but did
+    I learn this one?\r\n\r\nBased off of Kanji Module by Strike_Kaboom and LeGeND.\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=1890676453\r\n\r\nSpecial
+    thanks to ktane1 for proofreading and improving the manual.\r\n\r\nManuals\r\nHTML:
+    https://ktane.timwi.de/HTML/Not%20Kanji.html\r\nPDF: https://ktane.timwi.de/PDF/Not%20Kanji.pdf"
+  version: 1.0.2
   outputFolder: C:\Program Files (x86)\Steam\steamapps\common\Keep Talking and Nobody
     Explodes\mods
   previewImage: {fileID: 2800000, guid: 01355ee094e6785489fc44b181169074, type: 3}
